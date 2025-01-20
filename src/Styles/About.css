@@ -1,0 +1,149 @@
+.about-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px 20px;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #fbf9f1, #aad7d9); */
+    box-sizing: border-box;
+  }
+  
+  .about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFF0DC;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #FFF0DC;
+  }
+  
+  .carousel-container {
+    position: relative;
+    padding: 0 30px;
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  .hobby-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #FFF0DC, #F0BB78);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 300px; 
+    padding: 20px;
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hobby-emoji {
+    font-size: 5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hobby-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .hobby-details p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .slick-slide > div {
+    margin: 0 15px; 
+  }
+  
+  .slick-dots li button:before {
+    color: #888;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333;
+  }
+  
+  .slick-prev, .slick-next {
+    background-color: white;
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: #333; 
+    font-size: 16px;
+    opacity: 1;
+  }
+  
+  .slick-prev {
+    left: -50px;
+  }
+  
+  .slick-next {
+    right: -50px; 
+  }
+  
+@media (max-width: 768px) {
+  .hobby-card {
+    height: 350px; 
+    padding: 15px;
+  }
+  
+    .about-container p {
+      font-size: 1rem;
+    }
+  
+    .hobby-card {
+      height: auto;
+      padding: 15px;
+    }
+  
+    .hobby-emoji {
+      font-size: 4rem;
+    }
+  
+    .hobby-details h3 {
+      font-size: 1.2rem;
+    }
+  
+    .hobby-details p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .slick-slide {
+    opacity: 0.5; 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(0.9);
+}
+
+.slick-current {
+    opacity: 1;
+    transform: scale(1);
+}
+.active-slide {
+    opacity: 1;
+    transform: scale(1);
+}
+  
