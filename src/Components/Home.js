@@ -10,7 +10,7 @@ const Home = () => {
         <div className="image-section">
           <div className="image-container">
             <img
-              src="Prof.jpg"
+              src="profile.jpg"
               alt="Joshua Biong"
               className="profile-pic"
             />
