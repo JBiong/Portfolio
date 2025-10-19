@@ -4,13 +4,22 @@ import '../Styles/Projects.css';
 
 const projects = [
   {
+    title: "Leave Credits",
+    description:
+      "Monitor their leave balances and view how leaves, such as vacation or sick leaves that affect their credited salary. The app has been locally deployed.",
+    image: "LeaveCredits.png", 
+    link: "",
+    github: "https://github.com/Ininyow/deped-app",
+    techStack: ["Javascript", "ReactJS", "NestJS", "HTML", "Tailwind CSS", "MySQL", "TypeScript"],
+  },
+  {
     title: "InvestTrack",
     description:
-      "InvestTrack is a financial app for startups to track funding, manage investors, and handle budgeting. It helps with planning, compliance, and building investor trust, supporting growth and fundraising. Click the link to explore the app.",
+      "InvestTrack is a financial app for startups to track funding, manage investors, and handle budgeting. It helps with planning, compliance, and building investor trust, supporting growth and fundraising. Click the link to explore the app (Backend not deployed).",
     image: "InvestTrack.png",
     link: "https://investtrack-ten.vercel.app/",
     github: "https://github.com/JBiong/startupvest-front.git",
-    techStack: ["Javascript", "ReactJS", "NestJS", "TypeScript", "CSS", "MySQL"],
+    techStack: ["Javascript", "ReactJS", "NestJS", "TypeScript", "Tailwind CSS", "MySQL"],
   },
   {
     title: "Acadzen",
