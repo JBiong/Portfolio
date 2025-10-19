@@ -26,7 +26,7 @@ const Home = () => {
           <button
             className="download-button"
             onClick={() => {
-              window.open('/Resume.pdf', '_blank');
+              window.open('/Joshua_Biong_Resume.pdf', '_blank');
             }}
           >
             Resume
