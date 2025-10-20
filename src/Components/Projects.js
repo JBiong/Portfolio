@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, SquareArrowOutUpRight } from 'lucide-react';
+import { Github, SquareArrowOutUpRight, FileText } from 'lucide-react';
 import '../Styles/Projects.css';
 
 const projects = [
@@ -19,6 +19,7 @@ const projects = [
     image: "InvestTrack.png",
     link: "https://investtrack-ten.vercel.app/",
     github: "https://github.com/JBiong/startupvest-front.git",
+    paperLink: "https://iiari.org/journal_article/investtrack-design-and-development-of-online-system-for-startups-investment-funding/",
     techStack: ["Javascript", "ReactJS", "NestJS", "TypeScript", "Tailwind CSS", "MySQL"],
   },
   {
@@ -38,7 +39,7 @@ function Projects() {
       <div className="projects-header">
         <h1>Projects</h1>
         <p>
-          Projects I worked on during college days, and applying the knowledge I have learned to these projects.
+          Projects I worked on during college days and as an intern, and applying the knowledge I have learned to these projects.
         </p>
       </div>
 
@@ -78,6 +79,17 @@ function Projects() {
                 title={project.github ? "View GitHub Repository" : "No Link Available"}>
                 <Github/>
               </a>
+              
+                <a
+                  href={project.paperLink}
+                  className={`project-link ${!project.paperLink ? "disabled" : ""}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Read Research Paper"
+                >
+                  <FileText /> {/* Optional icon for paper */}
+                </a>
+              
             </div>
           </div>
         </div>
