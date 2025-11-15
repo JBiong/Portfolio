@@ -45,7 +45,7 @@ const Contact = () => {
         }
 
         emailjs
-            .send('service_pwkxx1v', 'template_9uzwg8j', {from_name: formData.name, reply_to: formData.email, message: formData.message}, '3yrmszeSEgDhL96Ki')
+            .send('service_pwkxx1v', 'template_9uzwg8j', {from_name: formData.name, reply_to: formData.email, message: formData.message}, 'CqNC4v1mTaor9u2a')
             .then(
                 () => {
                     showDialog('Message sent successfully!');
